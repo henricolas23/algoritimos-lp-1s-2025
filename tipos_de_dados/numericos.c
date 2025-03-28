@@ -13,7 +13,7 @@ float altura;
  printf("a idade eh %d\n", idade);
  printf("a altura eh %.2f\nO pseo eh %.2f", altura, peso);
 
- double dobro_peso = peso * 2.0;
+ float dobro_peso = peso * 2.0;
  printf("o dobro do peso eh %f", dobro_peso);
  return 0;
 }
