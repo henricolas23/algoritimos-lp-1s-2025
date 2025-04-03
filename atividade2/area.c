@@ -4,10 +4,10 @@
 
 int main (int argc, char* argv []){
    float raio, area;
-   float area, diagonal_maior, diagonal_menor;
-   float lado, area; 
-   float area, base, altura;
-   float base_maior, base_menor, altura, area;
+   float diagonal_maior, diagonal_menor;
+   float lado; 
+   float  base, altura;
+   float base_maior, base_menor, altura;
    
     char opcao;
 
@@ -107,5 +107,7 @@ scanf("%f", &lado);
         break;
         default:
         printf("opcao invalida");
-    }    
+    }
+    printf(" area = %2.f\n, area"); 
+    return 0;  
 }
