@@ -1,20 +1,22 @@
 #include <stdio.h>
+#include <math.h>
 
-int main (){
+int main(int argc, char* argv[]){
     float area, base, altura;
 
     //calcule a base e a altura  
     printf("digite a base do retangulo");
-    scanf(%.2f, &base);
+    scanf("%f", &base);
     printf("digite a altura do retangulo");
-    scanf(%.2f, &altura);
+    scanf("%f", &altura);
 
     //calcula a area
-    area = base * altura
+    area = base * altura;
 
     //exibe os resultados 
-    printf("o resultdo é %.2f\n", area);
+    printf("a area do retangulo é %.2f\n", area);
     
     
     
-    restrun 0;}
+    return 0;
+    }

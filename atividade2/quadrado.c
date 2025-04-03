@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <math.h>
 
-int main(){
+int main(int argc, char* argv[]){
     float lado, area; 
 
     //calcule o lado
 printf("digite o lado do quuadrado");
-scanf(%.2f, &lado);
+scanf("%f", &lado);
 
     //calcula a área 
     area = lado * lado;
@@ -13,5 +14,5 @@ scanf(%.2f, &lado);
     //exibe o resultado 
     printf("area do quadrado é: %.2f\n", area);
 
-  restrun 0;  
+  return 0;
 }

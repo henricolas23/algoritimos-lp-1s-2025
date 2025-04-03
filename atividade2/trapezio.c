@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <math.h>
 
-int main() {
+int main(int argc, char* argv[]) {
     float base_maior, base_menor, altura, area;
     
     // Solicita as bases e a altura ao usuário
