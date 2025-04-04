@@ -7,7 +7,7 @@ int main (int argc, char* argv []){
    float diagonal_maior, diagonal_menor;
    float lado; 
    float  base, altura;
-   float base_maior, base_menor, altura;
+   float base_maior, base_menor;
    
     char opcao;
 
