@@ -19,3 +19,27 @@ int maior_3n(int a, int b, int c){
 
  return maior;
 }
+
+
+
+int menor_2n(int a, int b){
+    int menor;
+    if (a < b){
+        menor = a;
+    }
+    else{
+        menor = b;
+}
+return menor;
+}
+
+/*
+retorna o menor entre 3 numeros interios
+*/
+int menor_3n(int a, int b, int c){  
+    return menor_2n(menor_2n,(a, b, c));
+
+
+
+ return menor;
+}
