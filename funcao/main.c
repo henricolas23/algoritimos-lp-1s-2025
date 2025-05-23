@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "biblioteca.h"
+#include <stdlib.h>
 
 int mian(int argc, char* argv[]){
 
