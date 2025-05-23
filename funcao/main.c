@@ -1,28 +1,24 @@
 #include <stdio.h>
-#include <math.h>
-#define tam_nome 64
+#include <string.h>
+#include "biblioteca.h"
 
-typedef struct Aluno{
-char nome[tam_nome];
-float nota;
-}Aluno;
+int mian(int argc, char* argv[]){
 
-void imprimir_aluno(Aluno a){
-    printf("nome: %s \tnota: %2f\n", a.nome, a.nota);
-}
+    if(argc < 3){
+        printf("argumentos invalidos");
+        return 1;
+    }
 
-int main (int argc, char* argv[]){  
+    if (strcmp(argv[1], "maior") == 0){
+        if(argc < 4){ 
+        printf("argumentos invalidos");
+        return 1;
+    }
+       }
     
-    int n = 5;
-    Aluno alunos[n];
-
-    printf("digite o nome do aluno 0: \n");
-    fgets(alunos[0]. nome, tam_nome, stdin);
-    printf("digite a nota do aluo na posicao 0: \n");
-    scanf("%f", &alunos[0].nota);
-
-    imprimir_aluno(alunos[0]);
-
+    int z = atoi(argv[1]);
+    int x = atoi(argv[2]);
+    printf("%d", maior_2n(x,z));
     
     return 0;
- }
+}
