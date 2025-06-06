@@ -2,13 +2,14 @@
 
 
 /*
-modos de abertura de arquivo 
-'r' -> para leitura
-'w' -> criar e escrever no arquivo
-'a' -> criar, se não existir, e adicionar ao final do arquivo
+    MODOS DE ABERTURA DE ARQUIVO
+    'r' -> para leitura
+    'w' -> criar/sobrescrever e escrever no arquivo
+    'a' -> criar, se não existir, e adicionar ao final do arquivo
 */
 
-int main (int argc, char* argv[]){ 
+
+int main(int argc, char* argv[]){
 
     FILE *sexta = fopen("sexta.txt", "w");
 
@@ -17,8 +18,9 @@ int main (int argc, char* argv[]){
         return 1;
     }
 
-    fprintf(stdout, "hollo, word");
-    
+    fprintf(sexta, "Hello, world!");
+
     fclose(sexta);
+
     return 0;
- }
+}

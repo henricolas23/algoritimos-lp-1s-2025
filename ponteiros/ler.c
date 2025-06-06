@@ -2,21 +2,22 @@
 
 #define MAX_TXT 256
 
-int main (int argc, char* argv[]){  
- 
-    char texto[256];
-    FILE *sexta = fopen("sexta.txt", "r");
- 
+int main(int argc, char* argv[]){
+
+    char texto[MAX_TXT];
+    FILE *sexta = fopen(argv[1], "r");
+
     if(sexta == NULL){
-        printf("erro ao abrir o arquivo");
+        printf("erro ao abrir arquivo");
         return 1;
-    
     }
 
-    while(fgets(texto,MAX_TXT, sexta)){ 
-    fprintf(stdout, texto);
+    while(fgets(texto, MAX_TXT, sexta)){
+        fprintf(stdout, texto);
     }
+    
+
     fclose(sexta);
 
     return 0;
- }
+}
